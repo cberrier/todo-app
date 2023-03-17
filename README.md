@@ -71,3 +71,26 @@ If a todo item is clicked, it will trigger an update to mark it completed
     
 - [x] A user should be able to update a TODO item
 - [x] A User should be able to mark a TODO item as completed
+
+# TODO
+
+Lots of things to cover in this one but some that I had planned if there was more time:
+
+
+Firebase Auth setup
+    - Authenticating each route
+
+Error Handling
+    - Logging of errors more consistent
+    - ErrorBoundary for React
+        -Typescript?
+    - Ensure system errors gracefully (no app crashes)
+
+Frontend
+    - Improve state data retention and population for a more fluid user experience
+    - Improve css (make it pretty)
+    - Add modal for editing additional fields
+
+Backend
+    - Improve naming convention of routes
+    - Move routes into a separate folder to simplify server.js file
