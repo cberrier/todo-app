@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  api:
+    build: ./nodejs_backend
+    ports:
+      - 8080:8080
+    environment:
+      - PORT=8080
+  web:
+    build: ./react_frontend
+    ports:
+      - 8081:8081
+
