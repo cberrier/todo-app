@@ -58,18 +58,11 @@ function App() {
       ...todo,
       completed: !todo.completed
     }
-    console.log("TODO", todo)
-    console.log("TODOS", todos)
-    console.log("TMPTODOS", todo)
-    console.log("UPDATE", update)
     const updateId = update.id
     const tmpTodos = [...todos];
     const todoIndex = tmpTodos.findIndex(a => a.id === updateId)
-    console.log("TMPTODOS", tmpTodos)
-    console.log("UPDATE ID", updateId)
     tmpTodos[todoIndex] = update
 
-    console.log("TMP TODOS AFTER", tmpTodos)
     setTodos(tmpTodos)
     await toggleComplete(update)
   }

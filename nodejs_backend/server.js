@@ -75,7 +75,6 @@ app.post('/todos/:id', async (req, res) => {
     return res.sendStatus(404)
   }
   const data = { text, completed }
-  console.log("DATA", data)
   const docRef = doc(db, "todo", id)
   await setDoc(docRef, data)
   .then(() => {
